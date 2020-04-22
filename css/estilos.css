@@ -21,7 +21,7 @@ body header div nav ol li a {
 /*selector de id # 
 #portafolio */
 
-body{
+body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
     /* font-style: italic; */
@@ -32,11 +32,11 @@ h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
     font-family: 'Fjalla One', sans-serif;
 }
 
-h1{
+h1 {
     font-size: 40px;
     line-height: 1.5;
     letter-spacing: -0.2px;
@@ -44,3 +44,14 @@ h1{
     /* text-decoration: underline; */
 }
 
+.hero {
+    height: 300px;
+}
+
+.project-details {
+    width: 500px;
+}
+
+.project-imageContainer {
+    width: 500px;
+}
