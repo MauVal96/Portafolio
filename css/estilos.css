@@ -298,11 +298,7 @@ figure {
 }
 
 .container {
-<<<<<<< HEAD
     /* border: 1px solid red; */
-=======
-    border: 1px solid red;
->>>>>>> 67b0727e40181226fa5fdee89f3db6b1f90241c5
     width: 1000px;
     margin: 0 auto;
     display: inherit;
