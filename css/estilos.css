@@ -34,12 +34,13 @@ body {
     /* font-style: italic; */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+ol,ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
     font-family: 'Fjalla One', sans-serif;
 }
 
@@ -55,6 +56,41 @@ h1 {
 
 h1 strong{
     color: #026fff; 
+}
+
+figure {
+    margin: 0;
+}
+
+
+.header {
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.menu {
+    height: inherit;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li {
+    height: inherit;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
 }
 
 .hero {
@@ -96,19 +132,10 @@ h1 strong{
     width: 500px;
 }
 
-.header {
-    background-color: #1b2127;
-    color: white;
-}
-
-.header a {
-    color: white;
-    text-decoration: none;
-}
-
 .flexbox {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .box {
