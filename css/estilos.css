@@ -59,6 +59,15 @@ h1 strong{
     color: #026fff; 
 }
 
+h2 {
+    color:  #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
 figure {
     margin: 0;
 }
@@ -107,6 +116,7 @@ figure {
 
 .portfolio {
     background: #fafafa;
+    padding: 20px;
 }
 
 .project {
@@ -125,6 +135,28 @@ figure {
     margin-bottom: 15px;
     padding: 20px;
     background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+}
+
+.project-course, .project-date, .project-url {
+    margin: 10 px 0;
+}
+
+/* .project-date {
+    margin: 10 px 0;
+} */
+
+.project-description {
+    font-size: 20px;
 }
 
 .project-details {
@@ -133,6 +165,10 @@ figure {
 
 .project-imageContainer {
     width: 500px;
+}
+
+.project strong {
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .flexbox {
