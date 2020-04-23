@@ -34,20 +34,15 @@ body {
     /* font-style: italic; */
 }
 
-ol,ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
 }
 
 h1 {
     font-size: 40px;
     line-height: 1.5;
-    letter-spacing: -0.2px;
+    letter-spacing: -.2px;
     color: white;
     margin: 0;
     /* margin: 100px 150px 70px 30px; */
@@ -69,50 +64,20 @@ h2 {
 
 }
 
-figure {
-    margin: 0;
-}
-
-
-.header {
-    background-color: #1b2127;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    height: 70px;
-}
-
-.menu {
-    height: inherit;
-}
-
-.header ol {
-    display: flex;
-    height: inherit;
-}
-
-.header ol li {
-    height: inherit;
-}
-
-.header a {
-    color: white;
-    text-decoration: none;
-    height: inherit;
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-}
-
 .hero {
     height: 300px;
-    background-image: url('../images/hero.jpg');
+    /* background-image: url('../images/hero.jpg'); */
     background-color: #1b2127;
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
+    /* background-size: 500px 300px;
+    background-repeat: no-repeat; */
     background-position-x: right;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.hero-image {
+    object-fit: cover;
 }
 
 .portfolio {
@@ -132,7 +97,6 @@ figure {
     border-style: solid; */
     border: 1px solid gray;
     border-radius: 10px;
-    margin: 10px;
     margin-bottom: 15px;
     padding: 20px;
     background: white;
@@ -172,18 +136,58 @@ figure {
     font-family: 'Fjalla One', sans-serif;
 }
 
+.header {
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+
+ol,ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+.menu {
+    height: inherit;
+}
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li {
+    height: inherit;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
 .event-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .event-list-title {
-    margin-left: 10px;
-
+    margin-left: 20px;
 }
 
 .event {
     margin: 10px;
-    width: 480 px;
+    width: 480px;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -197,7 +201,7 @@ figure {
 }
 
 .event-detail {
-    margin: 20px 40;
+    margin: 20px 40px;
     margin-top: -40px;
     background-color: white;
     position: relative;
@@ -214,7 +218,7 @@ figure {
     border: 1px solid;
     padding: 5px 20px;
     text-decoration: none;
-    border-radius: 5px;    
+    border-radius: 5px;   
 }
 
 .contact {
@@ -293,6 +297,16 @@ figure {
     vertical-align: middle;
 }
 
+.container {
+    border: 1px solid red;
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
 
 /* .flexbox {
     display: flex;
