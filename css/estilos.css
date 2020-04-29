@@ -64,7 +64,7 @@ body header div nav ol li a {
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    font-weight: normal;
+    /* font-weight: normal; */
     margin: 0;
     /* font-style: italic; */
 }
@@ -150,7 +150,7 @@ h2 {
 }
 
 .project-course, .project-date, .project-url {
-    margin: 10 px 0;
+    margin: 10px 0;
 }
 
 /* .project-date {
@@ -341,6 +341,10 @@ figure {
     vertical-align: middle;
 }
 
+.footer a {
+    color: white;
+}
+
 .container {
     /* border: 1px solid red; */
     max-width: 1000px;
@@ -358,9 +362,9 @@ figure {
     width: 100%;
     height: auto;
     /* max-width: 100%; */
-}
-
-.youtube-video {
+  }
+  
+  .youtube-video {
     /* width: 100%; */
     /* height: auto; */
     position: absolute;
@@ -370,16 +374,15 @@ figure {
     left: 0;
     width: 100%;
     height: 100%;
-    /* z-index: 3; */
-}
-
-.flexible-video {
+  }
+  
+  .flexible-video {
     width: 100%;
     height: 0;
     padding-top: 56.25%;
-    /* background: blue; */
+    background: blue;
     position: relative;
-}
+  }
 
 /* .flexbox {
     display: flex;
@@ -400,7 +403,7 @@ figure {
     width: 40px;
     height: 40px;
     border-radius:50%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0, .8);
     display: none;
     line-height: 40px;
     text-align: center;
@@ -414,7 +417,13 @@ figure {
 
 /* desktop first que empieces desde el MQ más grande */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
+    .event-list-title {
+        margin-left: 0;
+    }
+    .portfolio {
+        padding: 0;
+    }
     .container {
         padding: 0 1em;
     } 
@@ -436,10 +445,14 @@ figure {
     h1 {
         font-size: 2em;
         z-index: 2;
-    }   
+    }  
 }
 
 @media screen and (max-width: 767px) {
+    h2 {
+        font-size: 1.2em;
+        margin: .5em 0;
+    }
     .burger-button {
         display: block;
     }
@@ -469,16 +482,16 @@ figure {
         z-index: 3;
         top: 0;
         left: -100vw;
-        bottom: 0;
         width: 100vw;
         /* height: 100vh; */
+        bottom: 0;
         display: flex;
         align-items: center;
         justify-content: center;
         transition: .3s;
     }
     .menu.is-active {
-        left:0;
+        left: 0;
     }
     .project {
         display: block;
@@ -508,7 +521,7 @@ figure {
         font-size: 1em;
     }
     .project-description{
-        font-size: .8em;
+        font-size: 1em;
     }
     .event {
         width: auto;
@@ -524,7 +537,7 @@ figure {
         font-size: 1.5em;
     }
     .project-details {
-        font-size: 12px;
+        font-size: 14px;
     }
     .event-detail {
         margin: -2em .5em .5em;
@@ -532,12 +545,12 @@ figure {
     }
     .contact {
         height: auto;
-        padding: 1em 0;
+        padding: 1.5em 0;
         text-align: center;
         display: block;
     }
     .form-email button {
-        margin: 1.5em auto;
+        margin: 1em auto;
     }
     .form-email h3 {
         margin-top: 0;
@@ -546,6 +559,11 @@ figure {
         display: block;
         text-align: center;
         border: 1px solid transparent;
+    }
+    .social-link {
+        width: 40px;
+        height: 40px;
+        background-size: 100%;
     }
 }
 

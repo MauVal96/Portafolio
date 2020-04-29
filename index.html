@@ -23,7 +23,7 @@
                 <figure class="logo">
                     <img src="images/logo.png" height="70" alt="Logo de https://mauriciovaladez.com"/>
                 </figure>
-                <nav class="menu ">
+                <nav class="menu">
                     <ol>
                         <li>
                             <a class="link" href="#portafolio">Portafolio</a>
@@ -184,12 +184,13 @@
                 }
                 else {
                     burgerButton.removeEventListener('click',hideShow);
-
                 }
             }
 
+            validation(ipad);
+
             function hideShow() {
-                if(menu.classList.contains('is-active')){
+                if(menu.classList.contains('is-active')) {
                     menu.classList.remove('is-active');
                 }
                 else {
